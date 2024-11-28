@@ -18,10 +18,256 @@
 .site-navbar a:hover {
   color: var(--secondary-color);
 }
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+/* Login Page Background and Styles */
+body.login-page {
+  background: linear-gradient(135deg, #6a1e95, #3cb371); /* Purple to Green Gradient */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Centering the Login Box */
+.login-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  min-height: 100vh;      /* Ensures it spans the full height of the screen */
+  padding: 20px;          /* Adds padding for smaller screens */
+}
+
+/* Login Box Styling */
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  width: 100%;
+  max-width: 400px;       /* Limits the width for larger screens */
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Box Shadow Hover Effect */
+.login-box:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Login Title & Logo Styling */
+.login-logo img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.site-name {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left; /* Aligns the labels to the left */
+}
+
+label {
+  display: block; /* Forces labels onto their own line */
+  margin-bottom: 5px; /* Adds spacing between label and input */
+  font-weight: bold; /* Makes labels stand out */
+}
+
+.form-control {
+  width: 100%; /* Ensures the input spans the full container width */
+  padding: 10px; /* Standard padding inside the input */
+  border: 1px solid #ccc; /* Adds a border */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-control:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 10px rgba(81, 234, 234, 0.5); /* Focus box shadow */
+}
+
+/* Button Styling */
+.btn-block {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-block:hover {
+  background-color: var(--secondary-color); /* Hover effect */
+}
+
+/* Text Centering */
+.text-center {
+  margin-top: 1rem;
+}
+
+.text-center a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.text-center a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 1.5rem;
+  }
+}
+
+
+/* Sign-Up Page Background and Styles */
+body.sign-up-page {
+  background: linear-gradient(135deg, #6a1e95, #3cb371); /* Purple to Green Gradient */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Centering the Sign-Up Box */
+.sign-up-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  min-height: 100vh;      /* Ensures it spans the full height of the screen */
+  padding: 20px;          /* Adds padding for smaller screens */
+}
+
+/* Sign-Up Box Styling */
+.sign-up-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  width: 100%;
+  max-width: 400px;       /* Limits the width for larger screens */
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Box Shadow Hover Effect */
+.sign-up-box:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Sign-Up Title & Logo Styling */
+.sign-up-logo img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.site-name {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sign-up-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left; /* Aligns the labels to the left */
+}
+
+label {
+  display: block; /* Forces labels onto their own line */
+  margin-bottom: 5px; /* Adds spacing between label and input */
+  font-weight: bold; /* Makes labels stand out */
+}
+
+.form-control {
+  width: 100%; /* Ensures the input spans the full container width */
+  padding: 10px; /* Standard padding inside the input */
+  border: 1px solid #ccc; /* Adds a border */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-control:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 10px rgba(81, 234, 234, 0.5); /* Focus box shadow */
+}
+
+/* Button Styling */
+.btn-block {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-block:hover {
+  background-color: var(--secondary-color); /* Hover effect */
+}
+
+/* Text Centering */
+.text-center {
+  margin-top: 1rem;
+}
+
+.text-center a {
+  color: var(--neutral-color-color);
+  text-decoration: underline;
+}
+
+.text-center a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sign-up-box {
+    padding: 1.5rem;
+  }
+}
+
 
 /* Buttons */
 .btn-primary {
-  background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: white;
 }
@@ -51,7 +297,9 @@ body {
   line-height: 1.7;
   color: #8c92a0;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif; /* Use Rubik as the default font */
+ }
 
 ::-moz-selection {
   background: #000;
